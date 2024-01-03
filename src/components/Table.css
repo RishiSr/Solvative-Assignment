@@ -1,0 +1,146 @@
+.searchBox{
+    position: relative;
+    width: fit-content;
+}
+.input-box{
+    width: 241px;
+    height: 38px;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(206, 212, 218);
+    padding-top: 6px;   
+    padding-left: 12px;
+    border-radius: 4px;
+
+}
+
+.input-box:focus{
+    border-color: #7952b3;
+    box-shadow:  0 0 0 3px rgb(121 82 179 / 25%);
+
+}
+
+.input-div:disabled{
+    background-color: rgb(233, 236, 239);
+}
+
+.shortcut{
+    border: 1px solid ;
+    font-size: 12px;
+    border-color: rgb(222, 226, 230);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);    
+    right: 8px;
+    border-radius: 2px;
+    height: 24px;
+    width: 40px;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+    line-height: 24px;    
+    
+}
+
+
+
+table{
+    width: 100%;
+    
+    table-layout: fixed;
+    /* background-color: red; */
+}
+
+th{
+    font-weight: 700;
+    border-bottom: thin solid black;
+    text-align: left;
+    padding: 8px;
+    
+}
+
+td{
+    border-bottom: thin solid rgb(222, 226, 230) ;
+    text-align: left;
+    padding: 8px;
+ 
+}
+
+.pagination-parent{
+    display: flex ;
+    flex-direction: row;
+    place-items: center;
+    justify-content: space-between;
+    padding: 10px ;
+}
+
+.pagination{
+    display: flex ;
+    flex-direction: row;
+
+    gap: 4px;
+    place-items: center;
+
+}
+
+.nav-box{
+padding: 3px 5px 3px 5px;
+border-radius: 3px;
+background-color: rgb(212, 222, 222);
+border-width: 1px;
+
+}
+.page-display{
+    margin: 0px 10px 0px 10px;
+    padding: 5px;
+    min-width: 9px;
+    border-radius: 40%;
+    border:1px solid black;
+}
+.nav-box:active{
+    
+    background-color: rgb(156, 164, 164);
+    
+}
+
+.nav-box:disabled{
+    cursor: not-allowed;
+    background-color: rgb(131, 131, 131);
+
+}
+
+.limit-div{
+    display: flex;
+    flex-direction: row;
+    min-width: 100px;
+    border: 1px solid black;
+    place-content: center;
+    height: 20px;
+ }
+
+.limit-change{
+width: 40px;
+background-color: white;
+border:none;
+height: 100%;
+}
+
+.limit-change:disabled{
+    cursor:not-allowed;
+}
+.limit-display{
+min-width: 10px;
+text-align: center;
+padding: 0px 3px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+border: 1px solid black;
+border-top: 0px;
+border-bottom: 0px;
+
+}
+
+.prompt{
+    text-align: center;
+}
