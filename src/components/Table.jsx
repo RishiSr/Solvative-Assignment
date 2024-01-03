@@ -46,7 +46,7 @@ const Table = () => {
             params: { namePrefix: search, limit: limit, offset: 0 },
             headers: {
                 'x-rapidapi-host': 'wft-geo-db.p.rapidapi.com',
-                'x-rapidapi-key': '4ac5e3352fmshe6ac515ca3b8ccap1f0045jsnf0a504a87bbe'
+                'x-rapidapi-key': import.meta.env.VITE_API_KEY
             }
         };
 
@@ -75,7 +75,7 @@ const Table = () => {
         setIsLoading(true);
         axios.get(`https://wft-geo-db.p.rapidapi.com${link}`, {
             headers: {
-                'x-rapidapi-key': '4ac5e3352fmshe6ac515ca3b8ccap1f0045jsnf0a504a87bbe'
+                'x-rapidapi-key': import.meta.env.VITE_API_KEY
             }
         }).then(function (response) {
             console.log(response.data)
@@ -186,7 +186,7 @@ const Table = () => {
                     <div className='limit-display'>
                         Per page items:  {limit}
                     </div>
-                    <button disabled={limit == 10} className='limit-change' onClick={() => setLimit(limit - 1)}>
+                    <button disabled={limit == 10} className='limit-change' onClick={() => setLimit(limit + 1)}>
                         +
                     </button>
                 </div>
